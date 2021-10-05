@@ -1,0 +1,19 @@
+{
+  "name": "linkapi-integration-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroBarbosaSw/integrationsystems-linkapi.git"
+  },
+  "author": "Pedro silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroBarbosaSw/integrationsystems-linkapi/issues"
+  },
+  "homepage": "https://github.com/PedroBarbosaSw/integrationsystems-linkapi#readme"
+}
