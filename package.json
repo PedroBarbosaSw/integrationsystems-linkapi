@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/PedroBarbosaSw/integrationsystems-linkapi/issues"
   },
-  "homepage": "https://github.com/PedroBarbosaSw/integrationsystems-linkapi#readme"
+  "homepage": "https://github.com/PedroBarbosaSw/integrationsystems-linkapi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
