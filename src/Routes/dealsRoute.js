@@ -2,9 +2,9 @@ require('custom-env').env('private')
 
 const { response } = require('express')
 const {
-   createDeal,
    getDeals,
    filterWonDeals,
+   createDeal,
    updateDeal
 } = require('../utils/pipedrive.utils')
 
