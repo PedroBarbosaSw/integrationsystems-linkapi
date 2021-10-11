@@ -22,6 +22,7 @@
     "cors": "^2.8.5",
     "custom-env": "^2.0.1",
     "express": "^4.17.1",
+    "jsontoxml": "^1.0.1",
     "mongoose": "^6.0.9",
     "nodemon": "^2.0.13",
     "pipedrive": "^11.0.0"
