@@ -15,6 +15,25 @@ module.exports = {
          console.log(err)
          return res.status(400)
       }
+   },
+
+   async saveOrders(req, res) {
+      try {
+         const savedOrders = await saveOrders()
+         return res.status(200).send(savedOrders)
+      } catch(err) {
+         return res.send(400)
+      }
+   },
+
+   async sort(req, res) {
+      try {
+         const orderedOrders = await sortByDateValue()
+         return res.status(200).send(orderedOrders)
+      } catch(err) {
+         console.log(err)
+         return res.status(400)
+      }
    }
 }
 

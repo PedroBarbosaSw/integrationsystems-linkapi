@@ -14,6 +14,8 @@ routes.post('/addDeal', dealsRoute.addDeal)
 routes.get('/getOrders', ordersRoute.getOrders)
 routes.get('/addOrder', ordersRoute.registerNewOrder)
 
-routes.get('/integrate', integrationRoute.registerDealsAsOrder)
+routes.get('/integrate', integrationRoute.registerDealAsOrder)
+routes.get('/save', integrationRoute.saveOrders)
+routes.get('/sort', integrationRoute.sort)
 
 module.exports = routes
