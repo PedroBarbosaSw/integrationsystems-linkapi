@@ -9,7 +9,6 @@ const {
 } = require('../utils/pipedrive.utils')
 
 module.exports = {
-
    async getDeals(req, res) {
       try {
          const deals = await getDeals()

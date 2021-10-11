@@ -8,11 +8,9 @@ const domain_company = process.env.ENV_PIPEDRIVE_COMPANY_DOMAIN
 const getDeals = async function () {
    try {
       const deals = await axios
-         .get(`https://api.pipedrive.com/api/v2/deals?limit=100&api_token=${pipedrive_key}`)
+         .get(`https://api.pipedrive.com/api/v1/deals?limit=500&api_token=${pipedrive_key}`)
          .then((res) => {
-            deals_collection = res.data.data
-            
-            return deals_collection
+            return deals_collection = res.data.data
          })
          .catch((err) => {
             console.log(err)
@@ -49,13 +47,17 @@ const filterWonDeals = async function() {
          .get(`https://api.pipedrive.com/api/v1/deals?limit=500&api_token=${pipedrive_key}`)
          .then((res) => {
             deal = res.data.data
-
-            const deal_won_status = deal.filter(
-               (current) => current.status === 'won' 
-            )
-
-            const data = deal_won_status
-            return data
+            
+            try{
+               const deal_won_status = deal.filter(
+                  (current) => current.status === 'won' 
+               )
+               
+               const data = deal_won_status
+               return data
+            } catch(err) {
+               console.log('Erro: ' + err)
+            }
          })
          .catch((err) => {
             console.log(err)
